@@ -26,6 +26,50 @@ python app.py
 
 ---
 
+## 🧭 Cadrage Produit (PM perspective)
+
+### 🎯 Problématique
+Les Product Managers en expérimentation (A/B testing, SRM, FDR…) ont souvent besoin :
+- de **vérifier rapidement des concepts statistiques** sans relire des articles complexes,  
+- d’**accéder à des définitions sourcées** (et non à des réponses génératives peu fiables),  
+- de **préparer des briefs d’expérimentation** clairs pour les équipes data.
+
+### 💡 Objectif du projet
+Créer un **assistant open-source** capable de :
+1. **retrouver des connaissances fiables** (sourcées Wikipédia FR/EN) sur les concepts expérimentaux,  
+2. **accélérer la préparation d’expériences** (briefs A/B, SRM checks, guardrails…),  
+3. **servir de base à une future intégration interne** dans un outil de gestion d’expérimentations.
+
+### 🧱 MVP
+- Dataset curaté (Wikipédia FR/EN)
+- Index vectoriel FAISS + recherche BM25
+- Interface Gradio simple (question + langue)
+- Déploiement sur Hugging Face Space
+
+### 📈 KPIs (succès produit)
+| Indicateur | Cible |
+|-------------|--------|
+| 🔍 Temps moyen pour retrouver une définition fiable | < 10 secondes |
+| 💬 Feedback de compréhension utilisateur | > 80% “satisfait” |
+| 📚 Couverture des concepts clés (A/B, SRM, FDR, etc.) | 90% du glossaire PM/data |
+| 🚀 Temps de réponse moyen (HF Space) | < 2s |
+
+### 🧭 Roadmap produit
+| Phase | Objectif | Délivrable |
+|-------|------------|------------|
+| **v0.1.0** | MVP public (recherche FR/EN, FAISS + BM25) | Hugging Face Space + GitHub |
+| **v0.2.0** | UI améliorée + score de confiance | Gradio cards + cosine score |
+| **v0.3.0** | Export JSON/CSV + API interne | Endpoint REST ou HF API |
+| **v1.0.0** | Intégration “Experiment Manager” | Assistant intégré (brief + SRM check) |
+
+### 💬 Vision long terme
+Devenir un **assistant de cadrage expérimental** :
+> “Un copilote pour concevoir, vérifier et documenter des tests en ligne, avec transparence et traçabilité.”
+
+---
+
+
+
 ## 🗂 Structure du projet
 
 | Fichier                         | Description                                                                                                                                       |
