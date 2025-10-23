@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.eggs/
+build/
+dist/
+
+# venv & OS
+.venv/
+.env/
+.DS_Store
+.tmp-venv/
+
+# Notebooks & cache
+.ipynb_checkpoints/
+.cache/
+
+# Temp
+tmp/
+logs/
+
+# Data / artefacts locaux
+faiss_open_index/
+*.parquet
+*.arrow
+*.faiss
+*.pkl
+
+# HF token local si jamais
+.huggingface/
