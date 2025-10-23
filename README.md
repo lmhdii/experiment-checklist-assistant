@@ -141,5 +141,3 @@ Ce projet est distribué sous licence **MIT** — utilisation libre et attributi
 ---
 
 > 💡 *Pour les curieux : les fichiers FAISS volumineux sont stockés via Git LFS et ignorés du dépôt GitHub principal.*
-
-```
