@@ -31,3 +31,6 @@ faiss_open_index/
 
 # HF token local si jamais
 .huggingface/
+
+# Clés API locales
+.env
